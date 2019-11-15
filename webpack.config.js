@@ -80,6 +80,14 @@ module.exports = {
         
                   ]
             },
+
+            // 处理html模板图片
+            {
+                test:/\.html?$/,
+                use:[
+                    {loader:'html-withimg-loader'}
+                ]
+            }
         ]
     },
 
@@ -109,7 +117,7 @@ module.exports = {
             // 最小化
             minify:{
                 //是否移除注释
-                removeComments : false ,
+                removeComments : true ,
 
                 // 是否移除标签属性的引导（双引号 或 单引号）
                 remoeveAttributeQuotes: true ,

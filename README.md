@@ -32,3 +32,6 @@ npm i mini-css-extract-plugin -D
 
 ### 处理模板HTML
 npm i html-webpack-plugin -D
+
+### 处理html模板的图片
+> npm i html-withimg-loader -D
